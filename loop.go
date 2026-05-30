@@ -1,16 +1,20 @@
 package main
 
+// cool Go facts - you get compilation errors when having unused imports and variables
+
 import (
 	"fmt"
-	"os"
-	"strings"
-	"bufio"
 )
 
 func main() {
-	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Print("Hello welcome to termi")
-	scanner.Scan()
-	input := scanner.Text()
-	fmt.Println("You entered:",input)
+	var answer string
+	correct_answer := "2"
+	fmt.Print("What's 1+1?\n")
+	fmt.Scanln(&answer)
+	if answer == correct_answer {
+		fmt.Println("correct answer :)")
+	} else {
+		fmt.Println("wrong answer :(")
+	}
+
 }
