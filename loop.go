@@ -1,7 +1,5 @@
 package main
 
-// cool Go facts - you get compilation errors when having unused imports and variables
-
 import (
 	"fmt"
 )
